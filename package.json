@@ -2,7 +2,9 @@
   "name": "",
   "dependencies": {
     "colors": "^1.1.2",
-    "formidable": "^1.1.1"
+    "express": "^4.16.2",
+    "formidable": "^1.1.1",
+    "path": "^0.12.7"
   },
   "scripts": {
     "start": "nodemon index.js",

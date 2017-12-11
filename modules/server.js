@@ -3,6 +3,7 @@ var colors = require('colors');
 colors.enabled = true;
 var handlers = require("./handlers");
 
+
 function start() {
   function onRequest(request, response) {
     console.log("Odebrano zapytanie.".green);
@@ -15,11 +16,15 @@ function start() {
       case '/start':
         handlers.welcome(request, response);
         break;
+      
       case '/upload':
         handlers.upload(request, response);
         break;
       case '/show':
         handlers.show(request, response);
+        break;
+      case '/style.css': 
+      handlers.styles(request, response);
         break;
       default: 
         handlers.error(request, response);
